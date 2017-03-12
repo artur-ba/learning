@@ -1,0 +1,18 @@
+<html ng-app="myApp">
+
+<head>
+    <title>Scope Functions</title>
+    <script type="text/javascript" src="../libs/angular.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div ng-controller="MainController as main">
+        <p>Name: {{ main.user.name | capitalize}}</p>
+        <p>Account Type: {{ main.user.accountType | capitalize}}</p>
+        <p>Balance: {{ main.user.balance | currency:'PLN ':0}}</p>
+    </div>
+</body>
+
+</html>
